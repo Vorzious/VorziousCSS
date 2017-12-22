@@ -1,0 +1,34 @@
+/*
+* SASS variables
+*
+* @version 0.0.1
+* @author Thierry de Wit
+* @author Vorzious
+*/
+
+$primary: #1ab394;
+$success: #1c84c6;
+$info: #23c6c8;
+$warning: #f8ac59;
+$fault: #e74c3c;
+
+$grey: #8C8C8C;
+$light-grey: #B3B3B3;
+
+$black: #23292c;
+$white: #F6F6F6;
+$dark-white: rgb(236, 236, 236);
+$light-black: rgb(77, 71, 75);
+
+// Hovers
+$primary-hover: #318d75;
+$success-hover: #1672ac;
+$info-hover: #1aaaaa;
+$warning-hover: #ce8d47;
+$fault-hover: #bb4237;
+
+// Navbar
+$selected-navbar-item: #16dde0;
+
+// Border radius for buttons
+$btn-border-radius: 5px;
