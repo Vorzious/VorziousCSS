@@ -1,10 +1,10 @@
-/*
-* Layout helper to create grids with css-grids.
-*
-* @version 0.0.1
-* @author Thierry de Wit
-* @author Vorzious
-*/
+// /*
+// * Layout helper to create grids with css-grids.
+// *
+// * @version 0.0.1
+// * @author Thierry de Wit
+// * @author Vorzious
+// */
 
 /*
 -------------------------------------------------------
@@ -17,6 +17,7 @@ GENERAL
 }
 
 .grid{
+    display: -ms-grid;
     display: grid;
 }
 
@@ -27,26 +28,32 @@ EVEN COLUMNS
 */
 
 .gc1{
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
 }
 
 .gc2-even{
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
 }
 
 .gc3-even{
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .gc4-even{
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .gc5-even{
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .gc6-even{
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
@@ -57,18 +64,22 @@ LARGE CENTER COLUMN
 */
 
 .gc3-lg-center{
+    -ms-grid-columns: 1fr 2fr 1fr;
     grid-template-columns: 1fr 2fr 1fr;
 }
 
 .gc4-lg-center{
+    -ms-grid-columns: 1fr 2fr 2fr 1fr;
     grid-template-columns: 1fr 2fr 2fr 1fr;
 }
 
 .gc5-lg-center{
+    -ms-grid-columns: 1fr 1fr 2fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
 }
 
 .gc6-lg-center{
+    -ms-grid-columns: 1fr 1fr 2fr 2fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 2fr 2fr 1fr 1fr;
 }
 
@@ -79,10 +90,12 @@ EXTRA LARGE CENTER COLUMN
 */
 
 .gc5-xlg-center{
+    -ms-grid-columns: 1fr 2fr 2fr 2fr 1fr;
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
 }
 
 .gc6-xlg-center{
+    -ms-grid-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
 }
 
@@ -93,18 +106,22 @@ MEDIUM CENTER COLUMN
 */
 
 .gc3-med-center{
+    -ms-grid-columns: 1fr 1.5fr 1fr;
     grid-template-columns: 1fr 1.5fr 1fr; 
 }
 
 .gc4-med-center{
+    -ms-grid-columns: 1fr 1.5fr 1.5fr 1fr;
     grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
 }
 
 .gc5-med-center{
+    -ms-grid-columns: 1fr 1fr 1.5fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr;
 }
 
 .gc6-med-center{
+    -ms-grid-columns: 1fr 1fr 1.5fr 1.5fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1.5fr 1.5fr 1fr 1fr;
 }
 
@@ -115,18 +132,22 @@ SMALL CENTER COLUMN
 */
 
 .gc3-sm-center{
+    -ms-grid-columns: 1.5fr 1fr 1.5fr;
     grid-template-columns: 1.5fr 1fr 1.5fr;
 }
 
 .gc4-sm-center{
+    -ms-grid-columns: 1.5fr 1fr 1fr 1.5fr;
     grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
 }
 
 .gc5-sm-center{
+    -ms-grid-columns: 1.5fr 1.5fr 1fr 1.5fr 1.5fr;
     grid-template-columns: 1.5fr 1.5fr 1fr 1.5fr 1.5fr;
 }
 
 .gc6-sm-center{
+    -ms-grid-columns: 1.5fr 1.5fr 1fr 1fr 1.5fr 1.5fr;
     grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1.5fr 1.5fr;
 }
 
@@ -137,22 +158,27 @@ LARGE LEFT COLUMN
 */
 
 .gc2-lg-left{
+    -ms-grid-columns: 2fr 1fr;
     grid-template-columns: 2fr 1fr;
 }
 
 .gc3-lg-left{
+    -ms-grid-columns: 2fr 1fr 1fr;
     grid-template-columns: 2fr 1fr 1fr;
 }
 
 .gc4-lg-left{
+    -ms-grid-columns: 2fr 1fr 1fr 1fr;
     grid-template-columns: 2fr 1fr 1fr 1fr;
 }
 
 .gc5-lg-left{
+    -ms-grid-columns: 2fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
 }
 
 .gc6-lg-left{
+    -ms-grid-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
 }
 
@@ -163,22 +189,27 @@ MEDIUM LEFT COLUMN
 */
 
 .gc2-med-left{
+    -ms-grid-columns: 1.5fr 1fr;
     grid-template-columns: 1.5fr 1fr;
 }
 
 .gc3-med-left{
+    -ms-grid-columns: 1.5fr 1fr 1fr;
     grid-template-columns: 1.5fr 1fr 1fr; 
 }
 
 .gc4-med-left{
+    -ms-grid-columns: 1.5fr 1fr 1fr 1fr;
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
 }
 
 .gc5-med-left{
+    -ms-grid-columns: 1.5fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
 }
 
 .gc6-med-left{
+    -ms-grid-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr;
 }
 
@@ -189,22 +220,27 @@ SMALL LEFT COLUMN
 */
 
 .gc2-sm-left{
+    -ms-grid-columns: 1fr 1.5fr;
     grid-template-columns: 1fr 1.5fr;
 }
 
 .gc3-sm-left{
+    -ms-grid-columns: 1fr 1.5fr 1.5fr;
     grid-template-columns: 1fr 1.5fr 1.5fr;
 }
 
 .gc4-sm-left{
+    -ms-grid-columns: 1fr 1.5fr 1.5fr 1.5fr;
     grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr;
 }
 
 .gc5-sm-left{
+    -ms-grid-columns: 1fr 1.5fr 1.5fr 1.5fr 1.5fr;
     grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr 1.5fr;
 }
 
 .gc6-sm-left{
+    -ms-grid-columns: 1fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
     grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
 }
 
@@ -215,22 +251,27 @@ LARGE RIGHT COLUMN
 */
 
 .gc2-lg-right{
+    -ms-grid-columns: 1fr 2fr;
     grid-template-columns: 1fr 2fr;
 }
 
 .gc3-lg-right{
+    -ms-grid-columns: 1fr 1fr 2fr;
     grid-template-columns: 1fr 1fr 2fr;
 }
 
 .gc4-lg-right{
+    -ms-grid-columns: 1fr 1fr 1fr 2fr;
     grid-template-columns: 1fr 1fr 1fr 2fr;
 }
 
 .gc5-lg-right{
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 2fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
 }
 
 .gc6-lg-right{
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
 }
 
@@ -241,22 +282,27 @@ MEDIUM RIGHT COLUMN
 */
 
 .gc2-med-right{
+    -ms-grid-columns: 1fr 1.5fr;
     grid-template-columns: 1fr 1.5fr;
 }
 
 .gc3-med-right{
+    -ms-grid-columns: 1fr 1fr 1.5fr;
     grid-template-columns: 1fr 1fr 1.5fr; 
 }
 
 .gc4-med-right{
+    -ms-grid-columns: 1fr 1fr 1fr 1.5fr;
     grid-template-columns: 1fr 1fr 1fr 1.5fr;
 }
 
 .gc5-med-right{
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1.5fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
 }
 
 .gc6-med-right{
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1.5fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1.5fr;
 }
 
@@ -267,22 +313,27 @@ SMALL RIGHT COLUMN
 */
 
 .gc2-sm-right{
+    -ms-grid-columns: 1.5fr 1fr;
     grid-template-columns: 1.5fr 1fr;
 }
 
 .gc3-sm-right{
+    -ms-grid-columns: 1.5fr 1.5fr 1fr;
     grid-template-columns: 1.5fr 1.5fr 1fr;
 }
 
 .gc4-sm-right{
+    -ms-grid-columns: 1.5fr 1.5fr 1.5fr 1fr;
     grid-template-columns: 1.5fr 1.5fr 1.5fr 1fr;
 }
 
 .gc5-sm-right{
+    -ms-grid-columns: 1.5fr 1.5fr 1.5fr 1.5fr 1fr;
     grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr 1fr;
 }
 
 .gc6-sm-right{
+    -ms-grid-columns: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1fr;
     grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1fr;
 }
 
@@ -293,26 +344,32 @@ EVEN ROWS
 */
 
 .gr1{
+    -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
 }
 
 .gr2-even{
+    -ms-grid-rows: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
 .gr3-even{
+    -ms-grid-rows: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
 .gr4-even{
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .gr5-even{
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .gr6-even{
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
@@ -323,18 +380,22 @@ LARGE CENTER ROW
 */
 
 .gr3-lg-center{
+    -ms-grid-rows: 1fr 2fr 1fr;
     grid-template-rows: 1fr 2fr 1fr;
 }
 
 .gr4-lg-center{
-    grid-template-rows: 1fr 2fr 2fr 1fr
+    -ms-grid-rows: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
 }
 
 .gr5-lg-center{
+    -ms-grid-rows: 1fr 1fr 2fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
 }
 
 .gr6-lg-center{
+    -ms-grid-rows: 1fr 1fr 2fr 2fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 2fr 2fr 1fr 1fr;
 }
 
@@ -345,10 +406,12 @@ EXTRA LARGE CENTER ROW
 */
 
 .gr5-xlg-center{
+    -ms-grid-rows: 1fr 2fr 2fr 2fr 1fr;
     grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
 }
 
 .gr6-xlg-center{
+    -ms-grid-rows: 1fr 2fr 2fr 2fr 2fr 1fr;
     grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr;
 }
 
@@ -359,18 +422,22 @@ MEDIUM CENTER ROW
 */
 
 .gr3-med-center{
+    -ms-grid-rows: 1fr 1.5fr 1fr; 
     grid-template-rows: 1fr 1.5fr 1fr; 
 }
 
 .gr4-med-center{
+    -ms-grid-rows: 1fr 1.5fr 1.5fr 1fr;
     grid-template-rows: 1fr 1.5fr 1.5fr 1fr;
 }
 
 .gr5-med-center{
+    -ms-grid-rows: 1fr 1fr 1.5fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1.5fr 1fr 1fr;
 }
 
 .gr6-med-center{
+    -ms-grid-rows: 1fr 1fr 1.5fr 1.5fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1.5fr 1.5fr 1fr 1fr;
 }
 
@@ -381,18 +448,22 @@ SMALL CENTER ROW
 */
 
 .gr3-sm-center{
+    -ms-grid-rows: 1.5fr 1fr 1.5fr;
     grid-template-rows: 1.5fr 1fr 1.5fr;
 }
 
 .gr4-sm-center{
+    -ms-grid-rows: 1.5fr 1fr 1fr 1.5fr;
     grid-template-rows: 1.5fr 1fr 1fr 1.5fr;
 }
 
 .gr5-sm-center{
+    -ms-grid-rows: 1.5fr 1.5fr 1fr 1.5fr 1.5fr;
     grid-template-rows: 1.5fr 1.5fr 1fr 1.5fr 1.5fr;
 }
 
 .gr6-sm-center{
+    -ms-grid-rows: 1.5fr 1.5fr 1fr 1fr 1.5fr 1.5fr;
     grid-template-rows: 1.5fr 1.5fr 1fr 1fr 1.5fr 1.5fr;
 }
 
@@ -403,22 +474,27 @@ LARGE TOP ROW
 */
 
 .gr2-lg-top{
+    -ms-grid-rows: 2fr 1fr;
     grid-template-rows: 2fr 1fr;
 }
 
 .gr3-lg-top{
+    -ms-grid-rows: 2fr 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr;
 }
 
 .gr4-lg-top{
+    -ms-grid-rows: 2fr 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr 1fr;
 }
 
 .gr5-lg-top{
+    -ms-grid-rows: 2fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
 }
 
 .gr6-lg-top{
+    -ms-grid-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
 }
 
@@ -429,22 +505,27 @@ MEDIUM TOP ROW
 */
 
 .gr2-med-top{
+    -ms-grid-rows: 1.5fr 1fr;
     grid-template-columns: 1.5fr 1fr;
 }
 
 .gr3-med-top{
-    grid-template-columns: 1.5fr 1fr 1fr; 
+    -ms-grid-rows: 1.5fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr;
 }
 
 .gr4-med-top{
+    -ms-grid-rows: 1.5fr 1fr 1fr 1fr;
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
 }
 
 .gr5-med-top{
+    -ms-grid-rows: 1.5fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
 }
 
 .gr6-med-top{
+    -ms-grid-rows: 1.5fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr;
 }
 
@@ -455,22 +536,27 @@ SMALL TOP ROW
 */
 
 .gr2-sm-top{
+    -ms-grid-rows: 1fr 1.5fr;
     grid-template-rows: 1fr 1.5fr;
 }
 
 .gr3-sm-top{
+    -ms-grid-rows: 1fr 1.5fr 1.5fr;
     grid-template-rows: 1fr 1.5fr 1.5fr;
 }
 
 .gr4-sm-top{
+    -ms-grid-rows: 1fr 1.5fr 1.5fr 1.5fr;
     grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr;
 }
 
 .gr5-sm-top{
+    -ms-grid-rows: 1fr 1.5fr 1.5fr 1.5fr 1.5fr;
     grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr 1.5fr;
 }
 
 .gr6-sm-top{
+    -ms-grid-rows: 1fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
     grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
 }
 
@@ -481,22 +567,27 @@ LARGE BOTTOM ROW
 */
 
 .gr2-lg-bottom{
+    -ms-grid-rows: 1fr 2fr;
     grid-template-rows: 1fr 2fr;
 }
 
 .gr3-lg-bottom{
+    -ms-grid-rows: 1fr 1fr 2fr;
     grid-template-rows: 1fr 1fr 2fr;
 }
 
 .gr4-lg-bottom{
+    -ms-grid-rows: 1fr 1fr 1fr 2fr;
     grid-template-rows: 1fr 1fr 1fr 2fr;
 }
 
 .gr5-lg-bottom{
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 2fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
 }
 
 .gr6-lg-bottom{
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 2fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr;
 }
 
@@ -507,22 +598,27 @@ MEDIUM BOTTOM ROW
 */
 
 .gr2-med-bottom{
+    -ms-grid-rows: 1.5fr 1fr;
     grid-template-columns: 1.5fr 1fr;
 }
 
 .gr3-med-right{
-    grid-template-columns: 1fr 1fr 1.5fr; 
+    -ms-grid-rows: 1fr 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr 1.5fr;
 }
 
 .gr4-med-right{
+    -ms-grid-rows: 1fr 1fr 1fr 1.5fr;
     grid-template-columns: 1fr 1fr 1fr 1.5fr;
 }
 
 .gr5-med-right{
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1.5fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
 }
 
 .gr6-med-right{
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1.5fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1.5fr;
 }
 
@@ -533,21 +629,26 @@ SMALL BOTTOM ROW
 */
 
 .gr2-sm-bottom{
+    -ms-grid-rows: 1.5fr 1fr;
     grid-template-rows: 1.5fr 1fr;
 }
 
 .gr3-sm-bottom{
+    -ms-grid-rows: 1.5fr 1.5fr 1fr;
     grid-template-rows: 1.5fr 1.5fr 1fr;
 }
 
 .gr4-sm-bottom{
+    -ms-grid-rows: 1.5fr 1.5fr 1.5fr 1fr;
     grid-template-rows: 1.5fr 1.5fr 1.5fr 1fr;
 }
 
 .gr5-sm-bottom{
+    -ms-grid-rows: 1.5fr 1.5fr 1.5fr 1.5fr 1fr;
     grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr 1fr;
 }
 
 .gr6-sm-bottom{
+    -ms-grid-rows: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1fr;
     grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1fr;
 }
