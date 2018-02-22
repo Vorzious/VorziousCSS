@@ -1,0 +1,299 @@
+/*
+* Layout helper to create beautiful websites.
+*
+* @version 0.0.1
+* @author Thierry de Wit
+* @author Vorzious
+*/
+
+/*
+-------------------------------------------------------
+GENERAL
+-------------------------------------------------------
+*/
+
+html{
+    font-size: 62.5%;
+}
+
+body, *{
+    padding: 0; margin: 0;
+}
+
+/*
+-------------------------------------------------------
+POSITIONING
+-------------------------------------------------------
+*/
+
+.e-center{
+    margin: 0 auto;
+}
+
+.e-margin{
+    margin: 20px 5px 20px 5px;
+}
+
+.e-margin-top{
+    margin-top: 10px;
+}
+
+.e-margin-bottom{
+    margin-bottom: 10px;
+}
+
+.e-margin-left{
+    margin-left: 10px;
+}
+
+.e-margin-right{
+    margin-right: 10px;
+}
+
+.e-padding-bottom{
+    padding-bottom: 15px;
+}
+
+.clear{
+    clear: both;
+}
+
+.right{
+    position: relative;
+    float: right;
+}
+
+.left{
+    position: relative;
+    float: left;
+}
+
+.vertical-center{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.show{
+    display: block;
+}
+
+/*
+-------------------------------------------------------
+HR
+-------------------------------------------------------
+*/
+
+.hr-line-solid-lg{
+    padding: 10px 0px 10px 0px;
+    border-top: 1px solid $primary;
+    width: 100%;
+}
+
+.hr-line-solid-med{
+    padding: 10px 0px 10px 0px;
+    border-top: 1px solid $primary;
+    width: 50%;
+}
+
+.hr-line-solid-sm{
+    padding: 10px 0px 10px 0px;
+    border-top: 1px solid $primary;
+    width: 25%;
+}
+
+/*
+-------------------------------------------------------
+TEXT
+-------------------------------------------------------
+*/
+
+.txt-xlg{
+    @include font-size(38);
+    padding: 10px 5px 10px 5px;
+}
+
+.txt-lg{
+    @include font-size(28);
+}
+
+.txt-med{
+    @include font-size(16);
+}
+
+.txt-sm{
+    @include font-size(14);
+}
+
+.txt-center{
+    text-align: center;
+}
+
+/*
+-------------------------------------------------------
+BUTTONS
+-------------------------------------------------------
+*/
+
+.btn{
+    @include font-size(14);
+    position: relative;
+    border-radius: $btn-border-radius;
+    box-shadow: 0;
+    border: 1px solid $black;
+    margin: 10px 5px 10px 5px;
+    width: 125px;
+    height: 45px;
+
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    color: #FFFFFF;
+
+    &:hover{
+        background-color: $primary-hover;
+    }
+
+    i{
+        color: #FFFFFF;
+    }
+}
+
+.btn-success{
+    background-color: $success;
+    border-color: $success;
+    color: #FFFFFF;
+
+    &:hover{
+        background-color: $success-hover;
+    }
+}
+
+.btn-info{
+    background-color: $info;
+    border-color: $info;
+    color: #FFFFFF;
+
+    &:hover{
+        background-color: $info-hover;
+    }
+}
+
+.btn-warning{
+    background-color: $warning;
+    border-color: $warning;
+    color: #FFFFFF;
+
+    &:hover{
+        background-color: $warning-hover;
+    }
+}
+
+.btn-danger{
+    background-color: $fault;
+    border-color: $fault;
+    color: #FFFFFF;
+
+    &:hover{
+        background-color: $fault-hover;
+    }
+}
+
+.btn-primary-outline{
+    color: $primary;
+    -webkit-font-smoothing: antialiased;
+    background-color: transparent;
+    border: 1px solid $primary;
+
+    &:hover{
+        background-color: $primary;
+        color: #FFFFFF;
+    }
+}
+
+.btn-success-outline {
+    color: $success;
+    -webkit-font-smoothing: antialiased;
+    background-color: transparent;
+    border: 1px solid $success;
+
+    &:hover{
+        background-color: $success;
+        color: #FFFFFF;
+    }
+}
+
+.btn-info-outline {
+    color: $info;
+    -webkit-font-smoothing: antialiased;
+    background-color: transparent;
+    border: 1px solid $info;
+
+    &:hover{
+        background-color: $info;
+        color: #FFFFFF;
+    }
+}
+
+.btn-warning-outline {
+    color: $warning;
+    -webkit-font-smoothing: antialiased;
+    background-color: transparent;
+    border: 1px solid $warning;
+
+    &:hover{
+        background-color: $warning;
+        color: #FFFFFF;
+    }
+}
+
+.btn-danger-outline {
+    color: $fault;
+    -webkit-font-smoothing: antialiased;
+    background-color: transparent;
+    border: 1px solid $fault;
+
+    &:hover{
+        background-color: $fault;
+        color: #FFFFFF;
+    }
+}
+
+/*
+-------------------------------------------------------
+ICONS
+-------------------------------------------------------
+*/
+
+.icon-primary{
+    color: $primary;
+}
+
+.icon-success{
+    color: $success;
+}
+
+.icon-info{
+    color: $info;
+}
+
+.icon-warning{
+    color: $warning;
+}
+
+.icon-danger{
+    color: $fault;
+}

@@ -1,0 +1,30 @@
+/*
+* Mixins
+*
+* @version 0.0.1
+* @author Robin Heij
+*/
+
+/*
+-------------------------------------------------------
+FONT SIZES
+-------------------------------------------------------
+*/
+
+@function calculateRem($size) {
+    $remSize: $size / 10;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+    font-size: $size+px;
+    font-size: calculateRem($size);
+}
+
+@mixin font-size-and-line-height($size, $height) {
+    font-size: $size+px;
+    font-size: calculateRem($size);
+
+    line-height: $height+px;
+    line-height: calculateRem($height);
+}

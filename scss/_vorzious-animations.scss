@@ -1,0 +1,151 @@
+/*
+* Layout helper to create a simple fade in and up animation.
+*
+* @version 0.0.1
+* @author Thierry de Wit
+* @author Vorzious
+*/
+
+@keyframes fadeInUp{
+    from{
+        transform: translate3d(0, 40px, 0);
+    }
+
+    to{
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp{
+    from{
+        transform: translate3d(0, 40px, 0)
+    }
+
+    to{
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes pulse {
+	0% { opacity: 1; }
+	50% { opacity: .4; }
+	100% { opacity: 1; }
+}
+@-moz-keyframes pulse {
+	0% { opacity: 1; }
+	50% { opacity: .4; }
+	100% { opacity: 1; }
+}
+@-o-keyframes pulse {
+	0% { opacity: 1; }
+	50% { opacity: .4; }
+	100% { opacity: 1; }
+}
+@-ms-keyframes pulse {
+	0% { opacity: 1; }
+	50% { opacity: .4; }
+	100% { opacity: 1; }
+}
+@keyframes pulse {
+	0% { opacity: 1; }
+	50% { opacity: .4; }
+	100% { opacity: 1; }
+}
+
+@-webkit-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.1em; }
+    70% { top: -0.2em; }
+    100% { top: 0; }
+}
+@-moz-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.1em; }
+    70% { top: -0.2em; }
+    100% { top: 0; }
+}
+@-o-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.1em; }
+    70% { top: -0.2em; }
+    100% { top: 0; }
+}
+@-ms-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.1em; }
+    70% { top: -0.2em; }
+    100% { top: 0; }
+}
+@keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.1em; }
+    70% { top: -0.2em; }
+    100% { top: 0; }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.hover-pulse {
+    &:hover{
+        i, svg, img{
+            display: inline-block;
+            -moz-animation: pulse 2s infinite linear;
+            -o-animation: pulse 2s infinite linear;
+            -webkit-animation: pulse 2s infinite linear;
+            animation: pulse 2s infinite linear;
+        }
+    }
+}
+
+.pulse{
+    display: inline-block;
+    -moz-animation: pulse 2s infinite linear;
+    -o-animation: pulse 2s infinite linear;
+    -webkit-animation: pulse 2s infinite linear;
+    animation: pulse 2s infinite linear;
+}
+
+.hover-bounce {
+    &:hover{
+        i, svg, img{
+            display: inline-block;
+            position: relative;
+            -moz-animation: bounce 1s infinite linear;
+            -o-animation: bounce 1s infinite linear;
+            -webkit-animation: bounce 1s infinite linear;
+            animation: bounce 1s infinite linear;
+        }
+    }
+}
+
+.bounce{
+    display: inline-block;
+    position: relative;
+    -moz-animation: bounce 1s infinite linear;
+    -o-animation: bounce 1s infinite linear;
+    -webkit-animation: bounce 1s infinite linear;
+    animation: bounce 1s infinite linear;
+}
+
+/* Override font awesome spin animation */
+.fa-spin {
+    -webkit-animation: fa-spin 4s infinite linear;
+    animation: fa-spin 4s infinite linear;
+}
